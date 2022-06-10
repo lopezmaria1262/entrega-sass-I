@@ -1,0 +1,27 @@
+footer{
+    font-family: 'Jost', sans-serif;
+background-color:#fab8ca ;
+padding: 50px;
+.grupo-1{
+    width: 100%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 50px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        a{
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            color: rgb(10, 10, 10);
+            &:hover{
+                color: #e2406b;
+            }
+        }
+}

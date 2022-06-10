@@ -1,0 +1,59 @@
+header nav .barraDesktop a {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  margin: 15px;
+}
+header main .carousel-texto {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-style: italic;
+}
+header main p {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  margin: 15px;
+}
+header h3 h4 {
+  font-family: "Jost", sans-serif;
+  margin: 15px;
+}
+header .productos {
+  background-color: black;
+  padding: 70px;
+}
+header .productos .card-text {
+  background-color: #f7789a;
+}
+
+footer {
+  font-family: "Jost", sans-serif;
+  background-color: #fab8ca;
+  padding: 50px;
+}
+footer .grupo-1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+footer .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(10, 10, 10);
+}
+footer a:hover {
+  color: #e2406b;
+}
+
+/*# sourceMappingURL=style.css.map */
