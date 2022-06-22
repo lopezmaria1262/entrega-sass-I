@@ -1,0 +1,15 @@
+main{
+.nosotros{
+    .carousel-texto{
+        @extend %titulo-style;
+    }
+    
+    text-align: center;
+    font-size: larger;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat (2,1fr);
+    background-color: #cbc6ae;
+    
+}
+}

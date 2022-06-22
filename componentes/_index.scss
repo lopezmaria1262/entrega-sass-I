@@ -1,89 +1,141 @@
 header{
+    ul li{
+        list-style: none;
+    }
     nav{
-        .barraDesktop{
-       a{
-        font-family:'Raleway', sans-serif; 
-        font-size: large;
-        margin: 15px
+        .barraDesktop {
+            ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+                a{
+                  padding: 1rem;
+                  padding: 0 20px;
+                  color: #9b9163;
+                  &:hover{
+                  color:#353222 ;
+                  }
+                  @include textDeco;
+                  font: 10px;
+                  font-family: $fontOne;
+                  font-size: large;
+                  margin: 15px
+               }
+            }
         }
-    }
-}
-    main{
-        .carousel-texto{
-            font-family: 'Raleway', sans-serif;
-            color: white;
-            background-color: black;
-            text-align: center;
-            font-style: italic;
-        }
-        p{
-            text-align: center;
-            font-family: 'Jost', sans-serif;
-            font-size: 1.6rem;
-            margin: 15px;
-        }
-    }
-   
-    h3{
-        h4{
-            font-family: 'Jost', sans-serif;
-            margin: 15px;
-        }
-    }
-    
-    .productos{
-        background-color:   black;
-        padding: 70px;
-        .card-text{
-            background-color: #f7789a;
-        }
-    
-    }
+
+    }   
     @media screen and (max-width: 480px){
         .barraDesktop ul{
             display: none;
         }
-        .barraMobile{
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            font-family: 'Hind', sans-serif; 
-            background-color: white;
-            padding: 1rem;
-            padding: 0 20px;
-            color: black; 
-            text-decoration: none; 
-            text-transform: uppercase; 
-            font:bold 10px;
+            .barraMobile{
+                ul{
+                display: none;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                }
+                a{
+                font-family: $fontThree; 
+                background-color: white;
+                padding: 1rem;
+                padding: 0 20px;
+                color: #9b9163; 
+                &:hover{
+                    color:#353222 ;
+                }
+                @include textDeco;
+                font:bold 10px;
+                }
+            }
+            .barraMobile ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
         }
-        .barraMobile ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+        @media screen and (max-width: 768px){
+            .barraDesktop ul{
+                display: none;
+            }
+            .barraMobile{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-family: $fontThree;
+                background-color: white;
+                padding: 1rem;
+                padding: 0 20px;
+                color: #9b9163;
+                &:hover{
+                    color:#353222 ;
+                }
+                @include textDeco;
+                font: bold 10px;
+            }
+            .barraMobile ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+    }
+
+    main{
+        .carousel-texto{
+            font-family: $fontOne;
+            @extend %titulo-style;
+        }
+        p{
+            text-align: center;
+            font-family: $fontTwo;
+            font-size: 1.6rem;
+            margin: 15px;
+
         }
     }
-    @media screen and (max-width: 768px){
-        .barraDesktop ul{
-            display: none;
-        }
-        .barraMobile{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-family: 'Hind', sans-serif;
-            background-color: white;
-            padding: 1rem;
-            padding: 0 20px;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            font: bold 10px;
-        }
-        .barraMobile ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    }
-        
+    
+
 }
+section{
+    .productos{
+        background-image: url(../multimedia/marmol.jpg);
+        background-size: cover;
+        padding: 70px;
+        a {
+            text-decoration: none;
+        }.card-text{
+            background-color: #9b945b;
+            &:hover{
+                background-color: white;
+                color: #9b945b
+             }
+            
+        }
+        .carousel-texto{
+                @extend %titulo-style;
+                font-size: x-large;
+        }
+        
+    }
+}
+section{
+    .pedidos-ya{
+                background-image: url(../multimedia/mejor.jpeg); 
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 250px;
+                img{
+                    clip-path: circle();
+                    &:hover{
+                        background-image: red (5, 7, 12, 0.40);
+                    }
+
+                }
+}
+
+   }
+
+    
+

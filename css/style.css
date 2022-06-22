@@ -1,14 +1,92 @@
-header nav .barraDesktop a {
-  font-family: "Raleway", sans-serif;
-  font-size: large;
-  margin: 15px;
-}
-header main .carousel-texto {
-  font-family: "Raleway", sans-serif;
+section h1, main h1, main .nosotros .carousel-texto, section .productos .carousel-texto, header main .carousel-texto {
   color: white;
   background-color: black;
   text-align: center;
   font-style: italic;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+header ul li {
+  list-style: none;
+}
+header nav .barraDesktop ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+header nav .barraDesktop ul a {
+  padding: 1rem;
+  padding: 0 20px;
+  color: #9b9163;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  margin: 15px;
+}
+header nav .barraDesktop ul a:hover {
+  color: #353222;
+}
+@media screen and (max-width: 480px) {
+  header .barraDesktop ul {
+    display: none;
+  }
+  header .barraMobile ul {
+    display: none;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  header .barraMobile a {
+    font-family: "Hind", sans-serif;
+    background-color: white;
+    padding: 1rem;
+    padding: 0 20px;
+    color: #9b9163;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: bold 10px;
+  }
+  header .barraMobile a:hover {
+    color: #353222;
+  }
+  header .barraMobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .barraDesktop ul {
+    display: none;
+  }
+  header .barraMobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Hind", sans-serif;
+    background-color: white;
+    padding: 1rem;
+    padding: 0 20px;
+    color: #9b9163;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: bold 10px;
+  }
+  header .barraMobile:hover {
+    color: #353222;
+  }
+  header .barraMobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+header main .carousel-texto {
+  font-family: "Raleway", sans-serif;
 }
 header main p {
   text-align: center;
@@ -16,21 +94,82 @@ header main p {
   font-size: 1.6rem;
   margin: 15px;
 }
-header h3 h4 {
-  font-family: "Jost", sans-serif;
-  margin: 15px;
-}
-header .productos {
-  background-color: black;
+
+section .productos {
+  background-image: url(../multimedia/marmol.jpg);
+  background-size: cover;
   padding: 70px;
 }
-header .productos .card-text {
-  background-color: #f7789a;
+section .productos a {
+  text-decoration: none;
+}
+section .productos .card-text {
+  background-color: #9b945b;
+}
+section .productos .card-text:hover {
+  background-color: white;
+  color: #9b945b;
+}
+section .productos .carousel-texto {
+  font-size: x-large;
+}
+
+section .pedidos-ya {
+  background-image: url(../multimedia/mejor.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 250px;
+}
+section .pedidos-ya img {
+  clip-path: circle();
+}
+section .pedidos-ya img:hover {
+  background-image: red 5, 7, 12, 0.4;
+}
+
+main .nosotros {
+  text-align: center;
+  font-size: larger;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat 2, 1fr;
+  background-color: #cbc6ae;
+}
+main {
+  background-image: url(../multimedia/ice.jpg);
+  background-size: cover;
+}
+main .container-3 {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 9px 9px;
+  grid-template-areas: "gustos-1 gustos-2 gustos-3 gustos-4" "choco dulce crema fruta";
+}
+main div .mb-5 {
+  background: rgba(5, 7, 12, 0.4);
+  padding: 40px;
+}
+
+section {
+  background-color: #c9c4ab;
+}
+section figure img {
+  width: 100%;
+  height: 100%;
+  clip-path: circle();
+}
+
+section .paletas {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
-  font-family: "Jost", sans-serif;
-  background-color: #fab8ca;
+  font-family: "Lato", sans-serif;
+  color: black;
+  background-color: rgb(228, 228, 228);
   padding: 50px;
 }
 footer .grupo-1 {
@@ -46,14 +185,19 @@ footer .box {
   justify-content: center;
   align-items: center;
 }
+footer .box li {
+  list-style: none;
+}
 footer a {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: rgb(10, 10, 10);
+  color: black;
+  width: 55px;
+  font-size: larger;
 }
 footer a:hover {
-  color: #e2406b;
+  color: #504b33;
 }
 
 /*# sourceMappingURL=style.css.map */

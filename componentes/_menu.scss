@@ -1,0 +1,44 @@
+main{
+    
+        background-image: url(../multimedia/ice.jpg);
+        background-size: cover;
+    .container-3{
+    padding: 5px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    gap: 9px 9px; 
+    grid-template-areas: 
+    "gustos-1 gustos-2 gustos-3 gustos-4"
+    "choco dulce crema fruta";
+     }
+   h1{
+    @extend %titulo-style;
+   }
+   div{
+   .mb-5{
+    background: rgba(5, 7, 12, 0.40);
+    padding: 40px;
+   }
+}
+}
+section{
+    background-color: $bg-color;
+    h1{
+        @extend %titulo-style;
+    }
+    figure{
+
+    img{
+        width: 100%;
+        height: 100%;
+        clip-path: circle();
+    }
+    }
+}
+section{
+    .paletas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,6 +1,7 @@
 footer{
-    font-family: 'Jost', sans-serif;
-background-color:#fab8ca ;
+    font-family: $fontFour;
+    color: black;
+background-color:map-get($footer, bg-color ) ;
 padding: 50px;
 .grupo-1{
     width: 100%;
@@ -14,14 +15,21 @@ grid-gap: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    li{
+        list-style: none;
+    }
 }
         a{
             display: inline-block;
             text-decoration: none;
             text-align: center;
-            color: rgb(10, 10, 10);
+            color: black;
+            width: 55px;
+            font-size: larger;
             &:hover{
-                color: #e2406b;
+                color: $hoverOne;
             }
+            
         }
 }
